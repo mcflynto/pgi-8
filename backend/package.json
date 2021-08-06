@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "prettier": "^2.3.2"
+  }
+}
