@@ -37,7 +37,7 @@ const emit = async () => {
 
           channel.publish(exchange, key, Buffer.from(msg));
           console.log(` [>] Sent: ${key}:'${msg}'`);
-        }, 2000);
+        }, 500);
       });
     }
   );
