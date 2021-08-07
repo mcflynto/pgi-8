@@ -1,6 +1,5 @@
 import useClient from "./useClient";
-import React, { useEffect, useState } from "react";
-import { uuidv4 } from "../helpers/uuid";
+import React, { useCallback, useEffect, useState } from "react";
 
 export type liveData = {
   time: Date;
@@ -24,22 +23,26 @@ const useGetLiveData = () => {
     return () => {
       client.deactivate();
     };
-  });
+  }, []);
 
-  const send = (msg: string) => {
-    if (!client.connected) {
-      console.error("Client not connected!");
-    }
+  const send = useCallback(
+    (msg: string) => {
+      if (!client.connected) {
+        console.error("Client not connected!");
+        return false;
+      }
 
-    if (msg.length > 0) {
-      client.publish({
-        destination: "/exchange/data/live.input",
-        body: msg,
-      });
-    }
+      if (msg.length > 0) {
+        client.publish({
+          destination: "/exchange/data/live.input",
+          body: msg,
+        });
+      }
 
-    return true;
-  };
+      return true;
+    },
+    [client.connected]
+  );
 
   return { data, send };
 };
