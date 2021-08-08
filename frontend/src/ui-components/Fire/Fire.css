@@ -1,0 +1,33 @@
+.fire {
+  position: absolute;
+  font-size: 6rem;
+
+  animation: burn 1s linear 0s infinite alternate;
+}
+
+#fire-1 {
+  top: -80px;
+  left: -60px;
+  transform: rotate(-20deg);
+}
+
+#fire-2 {
+  top: -80px;
+  left: 400px;
+  transform: rotate(10deg);
+}
+
+#fire-3 {
+  top: 250px;
+  left: 300px;
+  transform: rotate(-10deg);
+}
+
+@keyframes burn {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}

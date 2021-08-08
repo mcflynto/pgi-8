@@ -1,0 +1,10 @@
+.about {
+  margin: 0 auto 60px auto;
+  max-width: 600px;
+}
+
+.experience,
+.education,
+.projects {
+  margin-bottom: 60px;
+}

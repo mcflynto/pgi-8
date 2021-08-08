@@ -1,14 +1,14 @@
 import useClient from "./useClient";
 import React, { useCallback, useEffect, useState } from "react";
 
-export type liveData = {
-  time: Date;
+export type LiveDataType = {
+  time: string;
   value: number;
   extremeMode: boolean;
 };
 
 const useGetLiveData = () => {
-  const [data, setData] = useState<liveData>();
+  const [data, setData] = useState<LiveDataType>();
   const client = useClient();
 
   useEffect(() => {

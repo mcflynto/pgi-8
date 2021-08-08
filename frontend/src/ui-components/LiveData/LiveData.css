@@ -1,0 +1,12 @@
+.live-data {
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.live-data > div:last-child {
+  margin-top: 10px;
+}
+
+.ex-mode {
+  color: red;
+}

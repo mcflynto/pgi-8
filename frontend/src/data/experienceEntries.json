@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Software Developer @9elements",
+    "description":
+      "Building high-quality digital products using mainly React and Ruby on Rails.\n\nProject management and team lead.",
+    "startDate": "October 2017",
+    "endDate": "Present"
+  },
+  {
+    "title": "Freelance Web Developer @Helge.Media",
+    "description":
+      "Working on and off as a freelance web developer providing websites and digital services for small companies and other freelancers.",
+    "startDate": "May 2017",
+    "endDate": "Present"
+  },
+  {
+    "title": "Geologist @CDM Smith",
+    "description": "Short internship as an environmental geologist.",
+    "startDate": "July 2017",
+    "endDate": "August 2017"
+  },
+  {
+    "title": "MSc Student @Uniper Energy Storage",
+    "description":
+      "Wrote my master thesis during an internship in the Technical Subsurface Department at Uniper Energy Storage in Essen.\nTopic: Aquifer Storage Eschenfelden - a 3D-Petrel study",
+    "startDate": "May 2016",
+    "endDate": "Dec 2016"
+  }
+]
