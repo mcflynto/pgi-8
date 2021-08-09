@@ -1,4 +1,4 @@
-import useClient from "./useClient";
+import client from "../services/amqpClient";
 import React, { useCallback, useEffect, useState } from "react";
 
 export type LiveDataType = {
@@ -9,7 +9,6 @@ export type LiveDataType = {
 
 const useGetLiveData = () => {
   const [data, setData] = useState<LiveDataType>();
-  const client = useClient();
 
   useEffect(() => {
     client.onConnect = () => {
